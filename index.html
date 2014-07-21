@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <title>Teradata Listener</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <script src="bower_components/platform/platform.js"></script>
+  
+  <link rel="import" href="bower_components/core-icons/core-icons.html">
+  <link rel="import" href="sampler-scaffold.html">
+  <link rel="import" href="bower_components/core-item/core-item.html">
+
+  <style>
+
+    body {
+      background-color: #565656;
+      font-family: 'Helvetica Neue', Helvetica, Arial;
+      margin: 0;
+    }
+    
+    section {
+      padding: 40px;
+      min-height: 300px;
+    }
+    core-item.item-1 /deep/ path {
+      fill: orange;
+    }
+    core-item.item-2 /deep/ path {
+      fill: tomato;
+    }
+    core-item.item-3 /deep/ path {
+      fill: teal;
+    }
+    core-item.item-4 /deep/ path {
+      fill: royalblue;
+    }
+    core-item.item-5 /deep/ path {
+      fill: slateblue;
+    }
+  </style>
+
+</head>
+
+<body unresolved>
+
+  <sampler-scaffold label="All Sources">
+    <paper-fab class="sourceButton bottom" icon="add" url="sources/add.html"></paper-fab>
+    <core-item label="Main Website" class="item-1" color="orange" icon="check-circle-blank" url="sources/website.html"></core-item>
+    <core-item label="iPhone App" class="item-2" color="tomato" icon="check-circle-blank" url="sources/iphone.html"></core-item>
+    <core-item label="Android Phone App" class="item-3" color="teal" icon="check-circle-blank" url="sources/android.html"></core-item>
+    <core-item label="iPad App" class="item-4" color="royalblue" icon="check-circle-blank" url="sources/ipad.html"></core-item>
+    <core-item label="Android Tablet App" class="item-5" color="slateblue" icon="check-circle-blank" url="sources/android-tab.html"></core-item>
+    
+  </sampler-scaffold>
+
+</body>
+</html>
